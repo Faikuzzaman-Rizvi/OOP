@@ -1,7 +1,7 @@
 <?php 
 class DailyAccount{
     public function __construct(public $deposit){}
-    private $items = [];
+    public $items = [];
 
     function addItem($name, $cost){
         $this->items[$name] = $cost;
@@ -26,4 +26,5 @@ $dailyAccount->addItem("Kacha Morich", 100);
 $dailyAccount->addItem("Alu", 50);
 $dailyAccount->addItem("Dim", 180);
 $dailyAccount->addItem("Murgi", 300);
+$dailyAccount->items = [];
 $dailyAccount->createReport();

@@ -15,7 +15,7 @@ Class Son extends Father{
 }
 
 $objSon=new Son();
-$objFather=new Son();
 $objSon->message;
 $objSon->print100();
+$objFather=new Father();
 $objFather->print100();
